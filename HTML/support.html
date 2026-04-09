@@ -24,7 +24,7 @@
         </div>
     </header>
 
-    <main id="Land-page">
+    <main id="Land-page-support">
 
         <section id="welcome-form-divs">
 
@@ -32,37 +32,40 @@
             <div id="welcome-div">
                 <h1>Welcome to our <br> support page!</h1>
                 <p>We're here to help you with any problems you may be having with <br> our product.</p>
-                <img src="../IMAGES/Sub Container.png" alt="movies-pic">
+                <div>
+                    <img src="../IMAGES/Sub Container.png" alt="movies-pic">
+                </div>
+                
             </div>
 
 
 
-            <div id="form-div">
-                <div id="first-last-name-div">
-                    <div>
+            <form id="form-div">
+                <div class="form-row">
+                    <div class="w-50">
                     <h3>First Name</h3>
                     <input type="text" placeholder="Enter First Name">
                     </div>
 
-                    <div>
+                    <div class="w-50">
                     <h3>Last Name</h3>
                     <input type="text" placeholder="Enter Last Name">
                     </div>
                 </div>
 
-                <div id="email-phone-div">
-                    <div>
+                <div class="form-row">
+                    <div class="w-50">
                     <h3>Email</h3>
                     <input type="email" placeholder="Enter your Email">
                     </div>
-                    <div>
+                    <div class="w-50-special">
                         <h3>Phone Number</h3>
-                        <div>
-                            <div>
+                        <div class="w-50-special-inside">
+                            <div class="dropdown">
                                 <img src="../IMAGES/45905ff594ea81e4c2c6c594416c7c84aaa8808a.png" alt="country-pic" style="width: 40px;">
                                 <img src="../IMAGES/arrow.png" alt="arrowdown-icon">
                             </div>
-                            <div>
+                            <div class="input">
                                 <input type="tel" placeholder="Enter Phone Number">
                             </div>
                         </div>
@@ -73,10 +76,10 @@
                     <textarea name="" id="" placeholder="Enter your Message"></textarea>
                 </div>
                 <div id="last-row-div">
-                    <input type="radio">I agree with Terms of Use and Privacy Policy
+                    <input type="checkbox" required>I agree with Terms of Use and Privacy Policy
                     <button>Send Message</button>
                 </div>
-            </div>
+            </form>
         </section>
 
     </main>
