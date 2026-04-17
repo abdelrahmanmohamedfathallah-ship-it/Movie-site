@@ -607,7 +607,7 @@ footer {
             right: 0;
             transform: translateX(100%);
             z-index: 998;
-            padding-top: 100px;
+            padding-top: 120px;
             background-color: var(--nav-bar-backcolor);
             flex-direction: column;
             height: 100vh;
