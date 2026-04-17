@@ -21,16 +21,47 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 162px;
+    padding: 0 102px;
     z-index: 999;
+    position: fixed;
+    height: 12vh;
+    top: 0;
+    right: 0;
+    background-color: #141414;
+    
+    #side-menu-container {
+        display: none;
+        position: relative;
+    }
+
+    #ham-menu,
+    #X-mark {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    #mobile-sidebar {
+        display: none;
+    }
+
+    #logo{
+        img{
+            width: 168px;
+        }
+    }
 
     #Nav-bar {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 40px;
-        gap: 30px;
-        border: solid 4px;
+        padding: 8px 25px;
+        border: solid 3px;
         border-radius: 12px;
         background-color: var(--nav-bar-backcolor);
         border-color: var(--nav-bar-border-color);
@@ -41,7 +72,7 @@ header {
             border: 1px;
             border-radius: 8px;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 15px;
         }
     }
     .active {
@@ -55,5 +86,60 @@ header {
         &:hover {
             cursor: pointer;
         }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+        header {
+            padding: 0px 30px;
+            #Nav-bar {
+                display: none;
+            }
+            #search-notfi-icons {
+                display: none;
+            }
+            #side-menu-container {
+            display: block;
+            width: 50px;
+            height: 50px;
+            #X-mark {
+                display: none;
+                border-radius: 8px;
+                background-color: #1A1A1A;
+            }
+            }
+        }
+        #mobile-sidebar {
+            display: flex;
+            position: fixed;
+            align-items: flex-start;
+            justify-content: flex-start;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            z-index: 998;
+            padding-top: 120px;
+            background-color: var(--nav-bar-backcolor);
+            flex-direction: column;
+            height: 100vh;
+            width: 70%;
+            transition: transform ease-out 0.5s;
+            a {
+            color: var(--nav-links-color);
+            width: 100%;
+            text-decoration: none;
+            padding: 30px 20px;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 10px;
+            }
+        }
+        .active {
+        background-color: var(--nav-links-backcolor);
     }
 }
