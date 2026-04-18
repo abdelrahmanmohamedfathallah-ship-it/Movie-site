@@ -13,3 +13,5 @@ XMark.addEventListener ('click' , function () {
     hamMenu.style.display = 'flex'
     XMark.style.display = 'none'
 })
+
+
