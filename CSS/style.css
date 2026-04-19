@@ -483,6 +483,25 @@ header {
     }
 
 }
+#landing-page-subscribtions {
+    width: 100%;
+    padding: 0px 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+
+    #secOne-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 footer {
     margin-top: 15vh;
     width: 100%;
